@@ -381,6 +381,12 @@ def main(args=None):
         "external files, as instances can end up elsewhere.",
     )
     outputGroup.add_argument(
+        "--fea-include-dir",
+        default=None,
+        help="Overrides the default directory where to search for included "
+        "feature files with relative paths."
+    )
+    outputGroup.add_argument(
         "--no-generate-GDEF",
         dest="generate_GDEF",
         action="store_false",
